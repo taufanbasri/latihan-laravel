@@ -50,3 +50,7 @@ Route::get('upload-form', function() {
     return View::make('upload_form');
 });
 Route::post('upload-profile-picture', 'HomeController@uploadProfilePicture');
+
+Route::get('generate-cookie', 'HomeController@generateCookie');
+
+Route::get('test-cookie', 'HomeController@testCookie');
