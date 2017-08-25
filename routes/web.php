@@ -54,3 +54,10 @@ Route::post('upload-profile-picture', 'HomeController@uploadProfilePicture');
 Route::get('generate-cookie', 'HomeController@generateCookie');
 
 Route::get('test-cookie', 'HomeController@testCookie');
+
+Route::get('daftar-buku', function (){
+    return response()->json([
+        ['judul' => 'Belajar Laravel', 'url' => 'www.google.com'],
+        ['judul' => 'Belajar PHP', 'url' => 'www.google.com']
+    ]);
+});
